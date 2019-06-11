@@ -13,6 +13,11 @@
         _ = require('lodash'),
         fs = require('fs');
 
+    // Set the PATH and LD_LIBRARY_PATH environment variables.
+    process.env['PATH'] = process.env['PATH'] + ':' + process.env['LAMBDA_TASK_ROOT'] + '/node_modules/pdffiller-aws-lambda/bin';
+    process.env['LD_LIBRARY_PATH'] = process.env['LAMBDA_TASK_ROOT'] + '/node_modules/pdffiller-aws-lambda/bin';
+
+
     var pdffiller = {
 
         mapForm2PDF: function( formFields, convMap ){
