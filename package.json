@@ -1,6 +1,6 @@
 {
   "name": "pdffiller-lambda",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "private": false,
   "description": "Take an existing PDF Form and data and PDF Filler will create a new PDF with all given fields populated.",
   "main": "index.js",
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "lodash": "~4.17.11",
-    "utf8-fdf-generator": "0.0.3"
+    "utf8-fdf-generator-lite": "^0.0.5"
   },
   "author": {
     "name": "John Taylor and David Baldwynn and Justin Hamade"
